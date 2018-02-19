@@ -11,7 +11,6 @@ import UIKit
 
 extension UIImage {
     convenience init?(url urlString: String) {
-        // TODO: Add caching
         guard let url = URL(string: urlString) else {
             logDebug("Unable to get create image url from: \(urlString)")
             return nil

@@ -48,6 +48,7 @@ struct UserProfile: Codable {
     let avatarHash: String
     let statusEmoji: String?
     let realName: String?
+    let title: String?
     let email: String?
     let image24: String
     let image48: String
@@ -58,10 +59,10 @@ struct UserProfile: Codable {
         case avatarHash = "avatar_hash"
         case statusEmoji = "status_emoji"
         case realName = "real_name"
-        case email
         case image24 = "image_24"
         case image48 = "image_48"
         case image72 = "image_72"
         case image192 = "image_192"
+        case email, title
     }
 }
