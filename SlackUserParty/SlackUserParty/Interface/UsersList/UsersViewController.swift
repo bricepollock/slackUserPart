@@ -24,6 +24,9 @@ class UsersViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = homeNavTitle
+        tableView.estimatedRowHeight = 100.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         UserTableViewCell.register(in: tableView)
         
         // Leave dispatch logic in the VC for now until we see reason to create:

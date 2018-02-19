@@ -29,6 +29,9 @@
 		4063F3CF203B59BC00BF6EDC /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4063F3C1203B59BC00BF6EDC /* UserTableViewCell.xib */; };
 		4063F3D0203B59BC00BF6EDC /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3C3203B59BC00BF6EDC /* UserProfileViewController.swift */; };
 		4063F3D1203B59BC00BF6EDC /* UserProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4063F3C4203B59BC00BF6EDC /* UserProfileViewController.storyboard */; };
+		4063F3D3203B69AA00BF6EDC /* UserProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3D2203B69AA00BF6EDC /* UserProfileDetailView.swift */; };
+		4063F3D5203B69CE00BF6EDC /* UserProfileDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */; };
+		4063F3D7203B729A00BF6EDC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3D6203B729A00BF6EDC /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		4063F3C1203B59BC00BF6EDC /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		4063F3C3203B59BC00BF6EDC /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		4063F3C4203B59BC00BF6EDC /* UserProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfileViewController.storyboard; sourceTree = "<group>"; };
+		4063F3D2203B69AA00BF6EDC /* UserProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDetailView.swift; sourceTree = "<group>"; };
+		4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileDetailView.xib; sourceTree = "<group>"; };
+		4063F3D6203B729A00BF6EDC /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,8 @@
 				4063F37F203B589300BF6EDC /* AppDelegate.swift */,
 				4063F3B8203B59BC00BF6EDC /* Foundation */,
 				4063F3B2203B59BC00BF6EDC /* Extensions */,
-				4063F3BA203B59BC00BF6EDC /* Interface */,
 				4063F3A7203B59B200BF6EDC /* Data */,
+				4063F3BA203B59BC00BF6EDC /* Interface */,
 				4063F386203B589300BF6EDC /* Assets.xcassets */,
 				4063F388203B589300BF6EDC /* LaunchScreen.storyboard */,
 				4063F38B203B589300BF6EDC /* Info.plist */,
@@ -133,6 +139,7 @@
 		4063F3A7203B59B200BF6EDC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4063F3D6203B729A00BF6EDC /* ImageCache.swift */,
 				4063F3A8203B59B200BF6EDC /* SlackNetworkHelper.swift */,
 				4063F3A9203B59B200BF6EDC /* NetworkManager.swift */,
 				4063F3AA203B59B200BF6EDC /* SlackUserService.swift */,
@@ -177,10 +184,10 @@
 		4063F3BB203B59BC00BF6EDC /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				4063F3C0203B59BC00BF6EDC /* UsersViewProcessor.swift */,
 				4063F3BC203B59BC00BF6EDC /* UsersViewController.swift */,
 				4063F3BD203B59BC00BF6EDC /* UsersViewController.storyboard */,
 				4063F3BF203B59BC00BF6EDC /* UserTableViewCell.swift */,
-				4063F3C0203B59BC00BF6EDC /* UsersViewProcessor.swift */,
 				4063F3C1203B59BC00BF6EDC /* UserTableViewCell.xib */,
 			);
 			path = UsersList;
@@ -191,6 +198,8 @@
 			children = (
 				4063F3C3203B59BC00BF6EDC /* UserProfileViewController.swift */,
 				4063F3C4203B59BC00BF6EDC /* UserProfileViewController.storyboard */,
+				4063F3D2203B69AA00BF6EDC /* UserProfileDetailView.swift */,
+				4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 				4063F38A203B589300BF6EDC /* LaunchScreen.storyboard in Resources */,
 				4063F387203B589300BF6EDC /* Assets.xcassets in Resources */,
 				4063F3CC203B59BC00BF6EDC /* UsersViewController.storyboard in Resources */,
+				4063F3D5203B69CE00BF6EDC /* UserProfileDetailView.xib in Resources */,
 				4063F3CF203B59BC00BF6EDC /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,9 +322,11 @@
 				4063F3D0203B59BC00BF6EDC /* UserProfileViewController.swift in Sources */,
 				4063F3CA203B59BC00BF6EDC /* Logger.swift in Sources */,
 				4063F3CE203B59BC00BF6EDC /* UsersViewProcessor.swift in Sources */,
+				4063F3D7203B729A00BF6EDC /* ImageCache.swift in Sources */,
 				4063F3C7203B59BC00BF6EDC /* UIView+Create.swift in Sources */,
 				4063F3C9203B59BC00BF6EDC /* UIImageView+url.swift in Sources */,
 				4063F3C6203B59BC00BF6EDC /* Collection+safe.swift in Sources */,
+				4063F3D3203B69AA00BF6EDC /* UserProfileDetailView.swift in Sources */,
 				4063F3AF203B59B200BF6EDC /* SlackUserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

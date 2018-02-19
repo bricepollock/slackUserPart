@@ -50,6 +50,7 @@ struct UserProfile: Codable {
     let realName: String?
     let email: String?
     let image24: String
+    let image48: String
     let image72: String
     let image192: String
     
@@ -59,6 +60,7 @@ struct UserProfile: Codable {
         case realName = "real_name"
         case email
         case image24 = "image_24"
+        case image48 = "image_48"
         case image72 = "image_72"
         case image192 = "image_192"
     }

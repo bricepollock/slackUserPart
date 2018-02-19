@@ -15,7 +15,7 @@ struct UsersViewProcessor {
             return UserTableViewCellData(
                 userName: nameString(given: user.name, realName: user.profile.realName, isDeleted: user.isDeleted, isBot: user.isBot),
                 userNameTextColor: textColor(deleted: user.isDeleted),
-                userImageURL: user.profile.image24
+                userImageURL: user.profile.image48
             )
         }
     }
