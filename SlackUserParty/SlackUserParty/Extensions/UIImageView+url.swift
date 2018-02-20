@@ -12,12 +12,9 @@ import UIKit
 extension UIImageView {
     func asyncImage(with urlString: String) {
         backgroundColor = UIColor.gray
-        DispatchQueue.global().async { [weak self] in
-            guard let image = UIImage(url: urlString) else { return }
-            DispatchQueue.main.async {
-                self?.image = image
-                self?.setNeedsDisplay()
-            }
+        ImageCache.shared.image(for: urlString) { [weak self] (image) in
+            self?.image = image
+            self?.setNeedsDisplay()
         }
     }
 }

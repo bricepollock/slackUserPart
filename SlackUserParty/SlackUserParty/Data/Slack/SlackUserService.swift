@@ -10,7 +10,7 @@ import Foundation
 
 struct SlackUserService {
     let slackHelper = SlackNetworkHelper()
-    let network = NetworkManager()
+    let manager = DataManager()
     
     func users(cursor: String? = nil, completion: @escaping (UserListResponse?) -> Void) {
         let limit = 20
@@ -23,6 +23,6 @@ struct SlackUserService {
         }
         
         guard let url = slackHelper.slackURL(for: .userList, with: queries) else { completion(nil); return}
-        network.makeURLRequest(for: url, with: completion)
+        manager.data(for: url, completion: completion)
     }
 }

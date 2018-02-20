@@ -40,7 +40,7 @@
                     <constraint firstAttribute="trailing" secondItem="TH4-NC-639" secondAttribute="trailing" constant="16" id="X3n-lP-rIS"/>
                     <constraint firstItem="TH4-NC-639" firstAttribute="leading" secondItem="nwV-kX-Yrb" secondAttribute="trailing" constant="16" id="alk-BF-Avy"/>
                     <constraint firstItem="nwV-kX-Yrb" firstAttribute="top" secondItem="TH4-NC-639" secondAttribute="top" id="bCT-c5-gma"/>
-                    <constraint firstItem="TH4-NC-639" firstAttribute="height" relation="greaterThanOrEqual" secondItem="nwV-kX-Yrb" secondAttribute="height" id="zLs-9Y-xKR"/>
+                    <constraint firstItem="TH4-NC-639" firstAttribute="height" relation="greaterThanOrEqual" secondItem="nwV-kX-Yrb" secondAttribute="height" priority="999" id="zLs-9Y-xKR"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

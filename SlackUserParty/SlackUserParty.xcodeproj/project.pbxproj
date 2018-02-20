@@ -32,6 +32,11 @@
 		4063F3D3203B69AA00BF6EDC /* UserProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3D2203B69AA00BF6EDC /* UserProfileDetailView.swift */; };
 		4063F3D5203B69CE00BF6EDC /* UserProfileDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */; };
 		4063F3D7203B729A00BF6EDC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3D6203B729A00BF6EDC /* ImageCache.swift */; };
+		4063F3DA203B8C9100BF6EDC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3D9203B8C9100BF6EDC /* DataStore.swift */; };
+		4063F3DC203B8FC500BF6EDC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3DB203B8FC500BF6EDC /* DataManager.swift */; };
+		4063F3DE203B985600BF6EDC /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3DD203B985600BF6EDC /* DataStoreTests.swift */; };
+		4063F3E0203B9A5900BF6EDC /* CollectionSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3DF203B9A5900BF6EDC /* CollectionSafeTests.swift */; };
+		4063F3E2203B9BA600BF6EDC /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3E1203B9BA600BF6EDC /* ImageCacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		4063F3D2203B69AA00BF6EDC /* UserProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDetailView.swift; sourceTree = "<group>"; };
 		4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileDetailView.xib; sourceTree = "<group>"; };
 		4063F3D6203B729A00BF6EDC /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		4063F3D9203B8C9100BF6EDC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		4063F3DB203B8FC500BF6EDC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4063F3DD203B985600BF6EDC /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
+		4063F3DF203B9A5900BF6EDC /* CollectionSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSafeTests.swift; sourceTree = "<group>"; };
+		4063F3E1203B9BA600BF6EDC /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				4063F394203B589300BF6EDC /* UsersViewProcessorTests.swift */,
+				4063F3DD203B985600BF6EDC /* DataStoreTests.swift */,
+				4063F3DF203B9A5900BF6EDC /* CollectionSafeTests.swift */,
+				4063F3E1203B9BA600BF6EDC /* ImageCacheTests.swift */,
 				4063F396203B589300BF6EDC /* Info.plist */,
 			);
 			path = SlackUserPartyTests;
@@ -139,12 +152,12 @@
 		4063F3A7203B59B200BF6EDC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4063F3D6203B729A00BF6EDC /* ImageCache.swift */,
-				4063F3A8203B59B200BF6EDC /* SlackNetworkHelper.swift */,
-				4063F3A9203B59B200BF6EDC /* NetworkManager.swift */,
-				4063F3AA203B59B200BF6EDC /* SlackUserService.swift */,
 				4063F3AB203B59B200BF6EDC /* Secrets.swift */,
-				4063F3AC203B59B200BF6EDC /* SlackUserStructs.swift */,
+				4063F3D6203B729A00BF6EDC /* ImageCache.swift */,
+				4063F3A9203B59B200BF6EDC /* NetworkManager.swift */,
+				4063F3D9203B8C9100BF6EDC /* DataStore.swift */,
+				4063F3DB203B8FC500BF6EDC /* DataManager.swift */,
+				4063F3D8203B8C5100BF6EDC /* Slack */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -202,6 +215,16 @@
 				4063F3D4203B69CE00BF6EDC /* UserProfileDetailView.xib */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		4063F3D8203B8C5100BF6EDC /* Slack */ = {
+			isa = PBXGroup;
+			children = (
+				4063F3AA203B59B200BF6EDC /* SlackUserService.swift */,
+				4063F3AC203B59B200BF6EDC /* SlackUserStructs.swift */,
+				4063F3A8203B59B200BF6EDC /* SlackNetworkHelper.swift */,
+			);
+			path = Slack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4063F3AE203B59B200BF6EDC /* NetworkManager.swift in Sources */,
+				4063F3DC203B8FC500BF6EDC /* DataManager.swift in Sources */,
 				4063F3B0203B59B200BF6EDC /* Secrets.swift in Sources */,
 				4063F3CD203B59BC00BF6EDC /* UserTableViewCell.swift in Sources */,
 				4063F3CB203B59BC00BF6EDC /* UsersViewController.swift in Sources */,
@@ -322,6 +346,7 @@
 				4063F3D0203B59BC00BF6EDC /* UserProfileViewController.swift in Sources */,
 				4063F3CA203B59BC00BF6EDC /* Logger.swift in Sources */,
 				4063F3CE203B59BC00BF6EDC /* UsersViewProcessor.swift in Sources */,
+				4063F3DA203B8C9100BF6EDC /* DataStore.swift in Sources */,
 				4063F3D7203B729A00BF6EDC /* ImageCache.swift in Sources */,
 				4063F3C7203B59BC00BF6EDC /* UIView+Create.swift in Sources */,
 				4063F3C9203B59BC00BF6EDC /* UIImageView+url.swift in Sources */,
@@ -336,6 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4063F395203B589300BF6EDC /* UsersViewProcessorTests.swift in Sources */,
+				4063F3E0203B9A5900BF6EDC /* CollectionSafeTests.swift in Sources */,
+				4063F3E2203B9BA600BF6EDC /* ImageCacheTests.swift in Sources */,
+				4063F3DE203B985600BF6EDC /* DataStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
