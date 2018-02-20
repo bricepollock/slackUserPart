@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
+    /// create an image synchronously from URL
     convenience init?(url urlString: String) {
         guard let url = URL(string: urlString) else {
             logDebug("Unable to get create image url from: \(urlString)")

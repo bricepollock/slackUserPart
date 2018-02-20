@@ -152,7 +152,6 @@
 		4063F3A7203B59B200BF6EDC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4063F3AB203B59B200BF6EDC /* Secrets.swift */,
 				4063F3D6203B729A00BF6EDC /* ImageCache.swift */,
 				4063F3A9203B59B200BF6EDC /* NetworkManager.swift */,
 				4063F3D9203B8C9100BF6EDC /* DataStore.swift */,
@@ -179,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				4063F3B9203B59BC00BF6EDC /* Logger.swift */,
+				4063F3AB203B59B200BF6EDC /* Secrets.swift */,
 			);
 			name = Foundation;
 			path = SlackUserParty/Foundation;

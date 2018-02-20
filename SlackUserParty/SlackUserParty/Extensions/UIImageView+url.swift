@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImageView {
+    /// Request and then update UIImage view asynchrnously without blocking main thread
     func asyncImage(with urlString: String) {
         backgroundColor = UIColor.gray
         ImageCache.shared.image(for: urlString) { [weak self] (image) in

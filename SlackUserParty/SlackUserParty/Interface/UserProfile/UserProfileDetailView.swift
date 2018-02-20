@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-// The creation of a Title: Detail view allows a leverage component with consistent branding to use through the rest of the app.
-// Additionally it makes it so we can quickly expand the number of detailed items we want displayed here in the future
+// The creation of a Title: Detail view allows a leveragable component with consistent branding to use through the rest of the app.
+// Additionally it makes it so we can quickly expand the number of detailed items we want displayed on the profile in the future
 // without adding more and more constraints to the main view controller view
 struct UserProfileDetailViewData {
     let title: String

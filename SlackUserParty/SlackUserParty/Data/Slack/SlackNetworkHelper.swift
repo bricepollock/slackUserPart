@@ -29,7 +29,6 @@ enum SlackErrorType: String, Codable {
     case requestTimeout = "request_timeout"
     case fatal_error = "fatal_error"
     
-    // TODO: put in own enum and union two together
     case warningMissingCharset = "missing_charset"
     case warningSuperfluousCharset = "superfluous_charset"
 }

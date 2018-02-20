@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-// I want my image cache to be a blob cache seperate than my network API cache structure so I can change them independently
+// I have a seperate ImageCache from DataStore because I want my image cache to be a blob cache indepentent
+// from my network API cache structure so I can change them independently and implement seperate cache purging strategies for each.
 class ImageCache {
-    // To avoid creating an image cache everywhere we need an image in every UIView I made a shared cache that we can
-    // tuck away inside uiimageview extensions
+    // I use a singleton here to avoid creating an image cache everywhere in our UIImageViews and placing distracting logic
+    // around view code.
     static let shared = ImageCache()
     private let store = UserDefaults.standard
     private init() { }

@@ -37,7 +37,6 @@ class UserProfileViewController: UIViewController {
         profileImageView.clipsToBounds = true
         profileImageView.layer.borderWidth = 3.0
         profileImageView.layer.borderColor = UIColor.white.cgColor
-
     }
     
     override func viewDidLoad() {
@@ -60,5 +59,4 @@ class UserProfileViewController: UIViewController {
         profileDetailsStackView.addArrangedSubview(detailedView)
         detailedView.configure(with: UserProfileDetailViewData(title: title, detail: value))
     }
-    
 }

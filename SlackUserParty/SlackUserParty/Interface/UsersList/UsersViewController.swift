@@ -10,7 +10,7 @@ import UIKit
 
 class UsersViewController: UIViewController {
     
-    // TODO: create localization strategy around strings
+    // Placing strings up here will help when we create a unified localization strategy later and need to pull them out
     let homeNavTitle = "Slack User List"
     
     @IBOutlet weak var tableView: UITableView!
@@ -32,6 +32,8 @@ class UsersViewController: UIViewController {
         // Leave dispatch logic in the VC for now until we see reason to create:
         //      1. Middle tier services to handle parallel / serial api calls
         //      2. Create an abstract framework to handle parallel / serial api calls safely (or use rxSwift)
+        //
+        // When these get too large I throw them in an extension so they are not distracting from layout code
         DispatchQueue.global().async { [weak self] in
             self?.userService.users { [weak self] (response) in
                 guard let `self` = self else { return }
@@ -47,9 +49,10 @@ class UsersViewController: UIViewController {
         }
     }
     
-    func loadMoreUsers() {
-        
-    }
+    // The slack API currently only returns 8 responses, but I expected pagination would be necessary.
+    // We'll use this method in the future to add pagination. I left in here just to discuss but normally
+    // I would remove unused methods
+    func loadMoreUsers() {    }
 }
 
 extension UsersViewController: UITableViewDataSource {

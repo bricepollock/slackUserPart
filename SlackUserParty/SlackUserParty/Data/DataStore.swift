@@ -8,10 +8,11 @@
 
 import Foundation
 
-// FIXME: Use one of the many key-value persistence frameworks instead of user defaults
 struct DataStore {
     let encoder = JSONEncoder()
     let decoder = JSONDecoder()
+    
+    // FIXME: Use one of the many key-value persistence frameworks instead of user defaults
     let store = UserDefaults.standard
     
     func write<T: Codable>(value: T, for key: String) {
@@ -32,7 +33,8 @@ struct DataStore {
     }
     
     /// WARNING! Also purges image store
-    /// FIXME: When we move to framework based persistence this will no longer be a problem.
+    /// FIXME: When we move to framework based persistence purging a shared cache will no longer be a problem.
+    /// This method exists primarily for testing at this point since we don't expire our cache data
     internal func purgeAll() {
         guard let bundleID = Bundle.main.bundleIdentifier else { return }
         UserDefaults.standard.removePersistentDomain(forName: bundleID)
