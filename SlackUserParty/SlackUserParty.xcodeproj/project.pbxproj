@@ -37,6 +37,7 @@
 		4063F3DE203B985600BF6EDC /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3DD203B985600BF6EDC /* DataStoreTests.swift */; };
 		4063F3E0203B9A5900BF6EDC /* CollectionSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3DF203B9A5900BF6EDC /* CollectionSafeTests.swift */; };
 		4063F3E2203B9BA600BF6EDC /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063F3E1203B9BA600BF6EDC /* ImageCacheTests.swift */; };
+		40B85040203BC48F00C82126 /* UIColor+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B8503F203BC48F00C82126 /* UIColor+components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		4063F3DD203B985600BF6EDC /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
 		4063F3DF203B9A5900BF6EDC /* CollectionSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSafeTests.swift; sourceTree = "<group>"; };
 		4063F3E1203B9BA600BF6EDC /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
+		40B8503F203BC48F00C82126 /* UIColor+components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+components.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				4063F3B5203B59BC00BF6EDC /* UIView+Create.swift */,
 				4063F3B6203B59BC00BF6EDC /* UIImage+url.swift */,
 				4063F3B7203B59BC00BF6EDC /* UIImageView+url.swift */,
+				40B8503F203BC48F00C82126 /* UIColor+components.swift */,
 			);
 			name = Extensions;
 			path = SlackUserParty/Extensions;
@@ -346,6 +349,7 @@
 				4063F3D0203B59BC00BF6EDC /* UserProfileViewController.swift in Sources */,
 				4063F3CA203B59BC00BF6EDC /* Logger.swift in Sources */,
 				4063F3CE203B59BC00BF6EDC /* UsersViewProcessor.swift in Sources */,
+				40B85040203BC48F00C82126 /* UIColor+components.swift in Sources */,
 				4063F3DA203B8C9100BF6EDC /* DataStore.swift in Sources */,
 				4063F3D7203B729A00BF6EDC /* ImageCache.swift in Sources */,
 				4063F3C7203B59BC00BF6EDC /* UIView+Create.swift in Sources */,

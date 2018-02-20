@@ -26,6 +26,7 @@ class UsersViewController: UIViewController {
         navigationItem.title = homeNavTitle
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.separatorStyle = .singleLine
         
         UserTableViewCell.register(in: tableView)
         
